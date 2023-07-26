@@ -15,7 +15,9 @@ const About = () => {
             experiences using HTML, CSS, JavaScript, React, Node.js, and more.
           </p>
           <div class="info-btn">
-            <button>See for CV</button>
+            <a href="https://docs.google.com/document/d/1iroLN5P1g6-PE3xgp3cOt4Lvc24uvZ6AXupm3RgbuXk/edit?usp=sharing">
+              <button>See for CV</button>
+            </a>
           </div>
         </div>
       </div>

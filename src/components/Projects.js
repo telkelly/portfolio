@@ -10,6 +10,24 @@ const Projects = () => {
       <h1 className="title-prj">Projects</h1>
       <div class="list-projects">
         <div class="projects">
+          <h3 class="project">Symptoms Checker</h3>
+          <a href="https://health-project-32ks.onrender.com/about">
+            <img src={checker} />
+          </a>
+          <p class="project-descrp">
+            SymptomChecker is a user-friendly tool that analyzes your symptoms
+            and provides potential causes. The user can input your symptoms and
+            receive a range of suggestions. Also the user can log in and sign up
+            on the site. SymptomChecker is not a substitute for professional
+            medical advice.
+          </p>
+          <div class="info-btn orange">
+            <a href="https://health-project-32ks.onrender.com/">
+              <button>Look at it</button>
+            </a>
+          </div>
+        </div>
+        <div class="projects">
           <h3 class="project">Color game</h3>
           <a>
             <img src={colorGame} />
@@ -77,24 +95,6 @@ const Projects = () => {
           </p>
           <div class="info-btn orange">
             <a href="https://rock-paper-scissors-lizard-spock-game-psi.vercel.app/">
-              <button>Look at it</button>
-            </a>
-          </div>
-        </div>
-        <div class="projects">
-          <h3 class="project">Symptoms Checker</h3>
-          <a href="https://health-project-32ks.onrender.com/about">
-            <img src={checker} />
-          </a>
-          <p class="project-descrp">
-            SymptomChecker is a user-friendly tool that analyzes your symptoms
-            and provides potential causes. The user can input your symptoms and
-            receive a range of suggestions. Also the user can log in and sign up
-            on the site. SymptomChecker is not a substitute for professional
-            medical advice.
-          </p>
-          <div class="info-btn orange">
-            <a href="https://health-project-32ks.onrender.com/">
               <button>Look at it</button>
             </a>
           </div>
