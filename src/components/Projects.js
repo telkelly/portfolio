@@ -10,10 +10,11 @@ const Projects = () => {
       <h1 className="title-prj">Projects</h1>
       <div class="list-projects">
         <div class="projects">
-          <h3 class="project">Symptoms Checker</h3>
           <a href="https://health-project-32ks.onrender.com/about">
             <img src={checker} />
           </a>
+          <h3 class="project">Symptoms Checker</h3>
+          <hr style={{ width: "80%" }} />
           <p class="project-descrp">
             SymptomChecker is a user-friendly tool that analyzes your symptoms
             and provides potential causes. The user can input your symptoms and
@@ -28,10 +29,11 @@ const Projects = () => {
           </div>
         </div>
         <div class="projects">
-          <h3 class="project">Color game</h3>
-          <a>
+          <a href="https://hackaton-project-six.vercel.app/">
             <img src={colorGame} />
           </a>
+          <h3 class="project">Color game</h3>
+          <hr style={{ width: "80%" }} />
           <p class="project-descrp">
             The game requires the user to select a slightly different color
             among a set of identical colors. By combining learned technologies,
@@ -45,10 +47,11 @@ const Projects = () => {
           </div>
         </div>
         <div class="projects">
-          <h3 class="project">Tip Calculator</h3>
-          <a>
+          <a href="https://tip-calculator-app-seven-beta.vercel.app/">
             <img src={tipCalculator} />
           </a>
+          <h3 class="project">Tip Calculator</h3>
+          <hr style={{ width: "80%" }} />
           <p class="project-descrp">
             The Tip Calculator project is a user-friendly application designed
             to assist individuals in calculating the appropriate tip amount for
@@ -62,10 +65,11 @@ const Projects = () => {
           </div>
         </div>
         <div class="projects">
-          <h3 class="project">Country API</h3>
-          <a>
+          <a href="https://rest-countries-api-rosy.vercel.app/">
             <img src={countryApi} />
           </a>
+          <h3 class="project">Country API</h3>
+          <hr style={{ width: "80%" }} />
           <p class="project-descrp">
             The project is a comprehensive application that empowers users to
             access data about any country worldwide through the use of APIs. By
@@ -80,10 +84,11 @@ const Projects = () => {
           </div>
         </div>
         <div class="projects">
-          <h3 class="project">Rock Paper Scissors Game</h3>
-          <a>
+          <a href="https://rock-paper-scissors-lizard-spock-game-psi.vercel.app/">
             <img src={rpsGame} />
           </a>
+          <h3 class="project">Rock Paper Scissors Game</h3>
+          <hr style={{ width: "80%" }} />
           <p class="project-descrp">
             The Rock-Paper-Scissors-Lizard-Spock Game project is a digital
             implementation of the classic Rock-Paper-Scissors game with an
@@ -93,6 +98,7 @@ const Projects = () => {
             The project provides users with a fun and interactive way to
             challenge the computer.
           </p>
+
           <div class="info-btn orange">
             <a href="https://rock-paper-scissors-lizard-spock-game-psi.vercel.app/">
               <button>Look at it</button>
