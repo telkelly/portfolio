@@ -119,3 +119,59 @@ header{
 .footer{
     padding: 60px 60px 20px 60px;
 }
+
+/* media-quaries */
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .nav-bar{
+    font-size: 14px;
+}
+
+.logo{
+    padding-left: 10px;
+}
+
+.nav-info{
+    width: 70%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.photo{
+    display: none;
+}
+
+.main-info{
+    gap: 0;
+    margin: 50px 0;
+}
+
+.about-person{
+    align-items: center;
+    text-align: center;
+}
+
+.title-prj{
+    padding-bottom: 20px;
+}
+
+.list-projects{
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.projects{
+    width: 80%;
+}
+
+.footer{
+    padding: 30px 20px 20px 10px;
+}
+
+.social-media{
+    width: auto;
+}
+}
+
