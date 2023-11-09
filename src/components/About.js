@@ -2,7 +2,7 @@ import photo from '../imgs/girl.png';
 
 const About = () => {
     return (
-      <div class="main-info">
+      <div id="about" class="main-info">
         <div class="personal-photo">
           <img class="photo" src={photo} />
         </div>

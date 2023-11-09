@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="nav-bar footer">
+    <footer id="footer" className="nav-bar footer">
       <div>
         Call me:
         <br />

@@ -19,6 +19,11 @@ header{
     align-items: center;
 }
 
+.nav-info a{
+    text-decoration: none;
+    color: black;
+}
+
 .logo{
     font-weight: 600;
     padding-left: 25px;

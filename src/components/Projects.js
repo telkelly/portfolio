@@ -8,7 +8,7 @@ const Projects = () => {
   return (
     <>
       <h1 className="title-prj">Projects</h1>
-      <div class="list-projects">
+      <div id="project" class="list-projects">
         <div class="projects">
           <a href="https://health-project-32ks.onrender.com/about">
             <img src={checker} />

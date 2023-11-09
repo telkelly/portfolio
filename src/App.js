@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <About /> 
+      <About/>
       <Projects />
       <Footer/>
     </>
