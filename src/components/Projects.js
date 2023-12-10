@@ -3,12 +3,31 @@ import countryApi from "../imgs/country-api.png";
 import rpsGame from "../imgs/rps-game.png";
 import tipCalculator from "../imgs/tip-calculator.png";
 import checker from "../imgs/checker.png";
+import meetthere from "../imgs/meet-there.png";
 
 const Projects = () => {
   return (
     <>
       <h1 className="title-prj">Projects</h1>
       <div id="project" class="list-projects">
+        <div class="projects">
+          <a href="https://meet-there-site.onrender.com/">
+            <img src={meetthere} />
+          </a>
+          <h3 class="project">Meet there</h3>
+          <hr style={{ width: "80%" }} />
+          <p class="project-descrp">
+            Online platform where event enthusiasts and organizers come
+            together. It's a space to discover, share, and engage with a variety
+            of events. Developed using the powerful Django framework and backed
+            by PostgreSQL.
+          </p>
+          <div class="info-btn orange">
+            <a href="https://meet-there-site.onrender.com/">
+              <button>Look at it</button>
+            </a>
+          </div>
+        </div>
         <div class="projects">
           <a href="https://health-project-32ks.onrender.com/about">
             <img src={checker} />
