@@ -81,6 +81,56 @@ header {
 
 /* PROJECT-SECTION*/
 
+.normal-card {
+  cursor: pointer;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+  background-color: rebeccapurple;
+}
+
+.normal-card h1 {
+  font-size: 18px;
+  color: var(--fg);
+  padding: 5px;
+  text-align: center;
+}
+
+.normal-card img {
+  width: 300px;
+}
+
+.expanded-card {
+  cursor: pointer;
+  width: 76%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+  background-color: red;
+}
+
+.expanded-card img{
+    width: 300px;
+}
+
+.expanded-card-h {
+  font-size: 27px;
+  color: var(--fg);
+  width: 300px;
+  padding: 5px;
+  place-self: end center;
+}
+.expanded-card p {
+  width: 300px;
+  padding: 5px;
+  place-self: start center;
+}
+
 .title-prj {
   text-align: center;
   padding-bottom: 50px;
@@ -91,6 +141,7 @@ header {
 }
 
 .list-projects {
+  position: relative;
   margin: 0 auto;
   width: 90%;
   display: flex;
@@ -137,9 +188,10 @@ header {
 }
 
 .detail-section {
-    position: absolute;
-    top: 50%;
-    background-color: #eee;
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  background-color: #eee;
 }
 
 .social-media {
@@ -207,5 +259,38 @@ header {
 
   .social-media {
     width: auto;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .card {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .card:nth-child(4n + 1),
+  .card:nth-child(4n + 4) {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    flex: 1 0 100%;
+    max-width: 100%;
+    padding: 10px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .card:nth-child(4n + 1),
+  .card:nth-child(4n + 4) {
+    flex: 1 0 100%;
+    max-width: 100%;
+  }
+
+  .card-content-container.open {
+    padding: 0;
   }
 }
