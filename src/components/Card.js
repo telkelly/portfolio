@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import { motion, LayoutGroup } from "framer-motion";
 
-const Card = ({ projects }) => {
+const Card = ({ projects, displayCount }) => {
   const [openCardIndex, setOpenCardIndex] = useState(null);
+    const projectsToShow = projects.slice(0, displayCount);
+
 
   return (
     <LayoutGroup>
-      {projects.map((item, index) => {
+      {projectsToShow.map((item, index) => {
         const isOpen = index === openCardIndex;
-
         return isOpen ? (
           <motion.div
             className="expanded-card"
@@ -16,11 +17,13 @@ const Card = ({ projects }) => {
             layoutId={`expandable-card-${index}`}
             key={index}
           >
-            <motion.h1 layoutId={`expandable-card-h-${index}`}>
-              {item.title}
-            </motion.h1>
-            <motion.h5>{item.subtitle}</motion.h5>
             <motion.img src={item.imgSrc} alt={item.title} />
+            <motion.div>
+              <motion.h1 layoutId={`expandable-card-h-${index}`}>
+                {item.title}
+              </motion.h1>
+              <motion.h5>{item.subtitle}</motion.h5>
+            </motion.div>
           </motion.div>
         ) : (
           <motion.div
@@ -33,6 +36,7 @@ const Card = ({ projects }) => {
               {item.title}
             </motion.h2>
             <p>{item.subtitle}</p>
+            <button>View</button>
           </motion.div>
         );
       })}

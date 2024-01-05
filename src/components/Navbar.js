@@ -3,9 +3,9 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <header class="nav-bar">
-      <div class="logo">Portfolio</div>
-      <div class="nav-info">
+    <header className="navbar">
+      <div className="logo">Portfolio</div>
+      <div className="nav-content">
         <a href="#project">Projects</a>
         <a href="#footer">Contact</a>
       </div>

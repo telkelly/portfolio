@@ -5,12 +5,17 @@ import Card from "./Card";
 
 const Projects = () => {
   return (
-    <>
-      <h1 className="title-prj">Projects</h1>
-      <div className="list-projects">
-        <Card projects={projects} />
+    <div className="proj-container">
+      <div className="projects">
+        <div className="title-div">
+          <h1 className="title-prj">Latest Projects</h1>
+          <button>See all</button>
+        </div>
+        <div className="list-projects">
+          <Card projects={projects} displayCount={3} />
+        </div>
       </div>
-    </>
+    </div>
   );
 };
 
