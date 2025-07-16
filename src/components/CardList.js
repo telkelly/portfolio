@@ -20,10 +20,10 @@ const CardList = ({projects, displayCount = null, linkToDetail = false}) => {
                             </div>
                         </div>
                     </div>
-                    <div className="card-btn">
-                        <a href={link} target="_blank" rel="noopener noreferrer">
+                    <div>
+                        <Link to={link} className="card-btn" target="_blank" rel="noopener noreferrer">
                             View
-                        </a>
+                        </Link>
                     </div>
                 </li>
             ))}

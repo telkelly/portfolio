@@ -114,7 +114,7 @@ body {
     background-color: rgb(249, 196, 81);
     border-radius: 25px 25px 0 25px;
     height: 100%;
-    margin: 1px 0;
+    margin: 1px 0 0;
 }
 
 .list-projects {
@@ -127,7 +127,7 @@ body {
 
 /* Card */
 .card {
-    width: 300px;
+    width: 350px;
     margin: 10px 0;
     background-color: #ffffff;
     border-radius: 15px;
@@ -185,6 +185,8 @@ body {
 }
 
 .card-btn {
+    z-index: 1;
+    display: block;
     background-color: #78bf79;
     color: white;
     padding: 10px;
@@ -193,6 +195,7 @@ body {
     border-radius: 6px;
     font-weight: bold;
     transition: background-color 0.3s;
+    text-decoration: none;
 }
 
 .card-btn:hover {
@@ -253,7 +256,12 @@ body {
 
 .icon{
     padding: 40px;
-    font-size: 70px;
+    font-size: 3rem;
+    color: #444;
+}
+
+.icon:hover{
+    animation: 3s infinite alternate slide-in;
 }
 
 .list-projects{
